@@ -1,0 +1,98 @@
+body{
+    background-color: lightblue;
+     text-align: center; 
+     overflow: hidden;
+}
+/* img{
+    transition: 5s;
+} */
+/* img:hover{    
+    transform: translate(50px,200px) scalex(2) scaleY(3); 
+}  
+  div{
+    background-color: bisque;
+    display: inline;
+    padding: 50px 40px;
+    margin: 60px auto;
+    border-radius: 80px;
+    width: 100px;
+    line-height: 30;
+    cursor: pointer;
+    transition: 3s linear;
+}
+.hover:hover{
+    background-color: rgb(0, 0, 0);    
+    transform: rotate(90deg) scale(2);
+    color: white;
+}  */
+ .image{
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    animation: drive;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.lungi{
+    position: absolute;
+    top: 400px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+} 
+@keyframes drive{
+    from{transform: translate(-100px);}
+    to{transform: translate(1400px)}   
+} 
+.cloud2{
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    opacity: 50%;
+    animation-name: cloud;
+    animation-duration: 30s;
+    animation-direction: reverse;
+}
+.cloud{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    animation-name: cloud;
+    animation-duration: 30s;
+    animation-direction: reverse;
+}
+.cloud3{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    animation-name: cloud;
+    animation-duration:40s;
+}
+.cloud4{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    animation-name: cloud4;
+    animation-duration: 50s;
+    animation-direction: normal;
+}
+@keyframes cloud{
+    from{transform: translate(0);}
+    to{transform: translate(1000px);}
+}
+@keyframes cloud4{
+    from{transform: translate(0);}
+    to{transform: translate(200px);}
+}
+body{
+    background-image: url();
+}
+
+  
